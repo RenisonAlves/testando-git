@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste-WEB</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./nivo-slider/nivo-slider.css">
+    <link rel="stylesheet" href="responsividade.css">
+</head>
+
+<body>
+    <header>
+        <div class="telefones-wrap">
+            <div class="telefones">
+                11 1234-1234 11 1234-1234
+            </div>
+        </div>
+        <div class="topo">
+            <div class="logo">
+                <img src="img/logo.jpg">
+            </div>
+            <!-- ############## NAVEGACAO / MENU DROPDOWN ######################################## -->
+            <nav>
+                <ul class="ul-navegacao-container">
+                    <li><a href="destino.html">HOME</a></li>
+                    <li id="empresa">EMPRESA
+                        <ul class="ul-menu-suspenso">
+                            <li><a href="destino.html">link</a></li>
+                            <li><a href="destino.html">link</a></li>
+                            <li class="li-sub-menu"><a href="destino.html">link
+                                    <ul class="ul-sub-menu">
+                                        <li>link</li>
+                                        <li>link</li>
+                                        <li>link</li>
+                                    </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="destino.html">CLIENTES</a></li>
+                    <li><a href="destino.html">CONTADO</a></li>
+                </ul>
+            </nav>
+
+            <!-- ######################################################## -->
+        </div>
+    </header>
+
+    <section class="slider-wrap">
+        <div class="slider">
+            <div class="nivo-slider">
+                <img src="img/banner1.jpeg" title="Slide 1" />
+                <img src="img/banner2.jpeg" title="Slide 2" />
+
+            </div>
+        </div>
+    </section>
+    <div class="conteudo">
+        <div class="conteudo-max">
+            <p class="conteudo-sobre-carro">
+                <span class="texto-carro">Conheça seu proximo veiculo!<br><br>
+                </span>
+                SUVs (Sport Utility Vehicles) conquistaram o mercado automobilístico global nas últimas décadas,
+                transformando a forma como as pessoas escolhem seus veículos. Com sua versatilidade, capacidade de
+                carga, e capacidade de enfrentar uma variedade de condições de estrada, os SUVs se tornaram uma escolha
+                popular
+                entre os consumidores de todo o mundo. Neste texto, exploraremos a ascensão e a popularidade dos SUVs.
+            </p>
+            <div class="imagem-centro-wrap">
+                <img src="img/carro.JPG" alt="imagem-centro" class="imagem-centro">
+            </div>
+        </div>
+    </div>
+    <div class="box-destaque-wrap">
+        <div class="box-destaque">
+            <h3>BOXES DESTAQUE</h3>
+            <figure>
+                <img src="img/img03.jpg" alt="cães de raça" class="img-destaque-1">
+                <a href="/">
+                    <figcaption>Um texto descritivo com link apenas.</figcaption>
+                </a>
+            </figure>
+            <figure>
+                <img src="img/img02.jpg" alt="cães de raça" class="img-destaque-1">
+                <a href="/">
+                    <figcaption>Um texto descritivo com link apenas.</figcaption>
+                </a>
+            </figure>
+
+
+            <figure>
+                <img src="img/img03.jpg" alt="cães de raça" class="img-destaque-1">
+                <a href="/">
+                    <figcaption>Um texto descritivo com link apenas.</figcaption>
+                </a>
+            </figure>
+            <figure>
+                <img src="img/img02.jpg" alt="cães de raça" class="img-destaque-1">
+                <a href="/">
+                    <figcaption>Um texto descritivo com link apenas.</figcaption>
+                </a>
+            </figure>
+
+        </div>
+    </div>
+    <hr class="linha-do-rodape">
+    <div id="rodape">
+
+        <ul id="lista-3-navegacao-rodape">
+            <li class="rodape">HOME</li>
+            <li class="rodape">EMPRESA</li>
+            <li class="rodape">CLIENTES</li>
+            <li class="rodape">CONTATO</li>
+        </ul>
+        <h3 class="rodape">RODAPE</h3>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./nivo-slider/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('.nivo-slider').nivoSlider();
+        });
+    </script>
+
+</body>
+
+</html>

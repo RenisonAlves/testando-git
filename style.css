@@ -1,0 +1,284 @@
+:root {
+    --cor-branca: white;
+    --cor-preta: black;
+    --cor-ciza: gray;
+    --tamanho-font: 20px;
+    --tamanho-font-small: 12px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-ciza);
+    padding-top: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-preta);
+    margin: 0px;
+    color: var(--cor-ciza);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    font-weight: 500;
+    width: 100%;
+    padding: 20px 10px 5px 10px;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.telefones-wrap {
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.telefones {
+    background-color: blue;    
+    text-align: end;
+    width: 100%;
+    max-width: 894px;
+    padding: 10px;
+}
+
+.topo {
+    display: flex;
+    width: 100%;
+    max-width: 894px;
+    padding: 10px 0px;
+}
+
+/* ################ NAVEGACAO ##############################################*/
+.logo {
+    flex: 1;
+    padding-left: 5px;
+    height: 75px;
+}
+
+.logo img {
+    height: 75px;
+    width: 196px;
+}
+
+nav {
+    display: flex;
+    flex: 2;
+    padding-right: 5px;
+
+    justify-content: end;
+}
+
+/* ####################### MENUS DROPDOWN ################################# */
+.ul-navegacao-container {
+    display: flex;
+    width: 60%;
+    text-decoration: none;
+    align-items: end;
+    list-style: none;
+    margin-right: 10px;
+}
+
+.ul-navegacao-container li {
+    width: 100%;
+    text-align: center;    
+}
+
+#empresa {
+    position: relative;
+}
+
+.ul-menu-suspenso {
+    display: flex;
+    flex-direction: column;        
+    position: absolute;
+    top: 15px;
+    width: 88.39px;
+    background: linear-gradient(rgb(0, 0, 0), rgb(42, 41, 41));
+    box-shadow: 2px 2px 4px rgb(48, 47, 47); 
+    z-index: 110;    
+    list-style: none;
+    display: none;
+}
+#empresa:hover .ul-menu-suspenso{
+    display: block;
+    background-color: gray;
+}
+
+.li-sub-menu {
+    position: relative;
+}
+
+.ul-sub-menu {
+   
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    width: 88.39px;
+    left: 87.39px;
+    background: linear-gradient(rgb(0, 0, 0), rgb(42, 41, 41));
+    box-shadow: 2px 2px 4px rgb(48, 47, 47);
+    border-bottom-right-radius: 5px;
+    z-index: 109;
+   list-style: none;
+}
+
+.ul-menu-suspenso li, .ul-sub-menu li:hover {
+    background-color: #000000;;
+
+}
+
+
+
+/* ############################## FINAL MENU SUSPENSO ############################## */
+.slider-wrap {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.slider {
+    width: 100%;
+    max-width: 894px;
+}
+
+.conteudo {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+}
+
+.texto-carro {
+    font-size: var(--tamanho-font);  
+    font-weight: bold;
+}
+
+.conteudo-sobre-carro {
+    width: 100%;
+    max-width: 450px;
+    text-align: justify;
+
+}
+
+.conteudo-max {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 894px;
+    padding: 0 10px;
+    margin-top: 10px;
+
+}
+
+.texto {
+    flex: 6;
+}
+
+.texto h3 {
+    padding-left: 0;
+}
+
+.imagem-centro-wrap {
+    align-items: center;
+}
+
+.imagem-centro {
+    width: 325px;
+    height: 212px;
+    display: block;
+}
+
+.box-destaque-wrap {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 200px;
+}
+
+.box-destaque {
+    width: 100%;
+    max-width: 894px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-right: 10px;
+}
+
+figure {
+    margin: 0px;
+    padding: 0px;
+    width: 196px;
+
+}
+
+figure img {
+    width: 196px;
+}
+
+.linha-do-rodape {
+    margin: 0px;
+    background-color: var(--cor-ciza);
+}
+
+#rodape {
+    text-align: center;
+    padding-top: 20px;
+    background-color: rgb(18, 13, 13);
+    width: 100%;
+    margin: auto;
+    color: var(--cor-ciza);
+    padding-bottom: 40px;
+
+
+}
+
+#rodape ul li {
+    list-style: none;
+    display: inline;
+    padding-top: 10px 20px;
+    margin: 0 10px;
+
+
+}
+
+h3.rodape {
+    margin-top: 60px;
+    font-weight: 600px;
+
+}
+
+.nivo-controlNav {
+    display: none;
+}
+
+/* ESTILOS PAGINA DESTINO  ##################### */
+
+.destino {
+    position: absolute;
+    top: 200px;
+    left: 20%;   
+    font-size: var(--tamanho-font);
+}
+
+.link-de-volta {
+    position: absolute;
+    top: 500px;
+    left: 500px;
+}
